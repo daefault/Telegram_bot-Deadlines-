@@ -10,9 +10,10 @@ if not all([API_ID, API_HASH, BOT_TOKEN]):
         "Проверьте файл .env или переменные на хостинге.\n"
         "Необходимы: API_ID, API_HASH, BOT_TOKEN"
     )
-
+PROXY_PORT = os.environ.get('PROXY_PORT')
 PROXY_HOST = os.environ.get('PROXY_HOST')
-PROXY_PORT = int(os.environ.get('PROXY_PORT'))
+if PROXY_PORT:
+    PROXY_PORT = int(PROXY_PORT)
 PROXY_SECRET = os.environ.get('PROXY_SECRET')
 
 DB_PATH = 'data/deadlines.db'
