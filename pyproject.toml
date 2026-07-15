@@ -1,0 +1,19 @@
+[project]
+name = "tg-bot"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Artyom Denisov",email = "artem_denisov_2005@inbox.ru"}
+]
+requires-python = ">=3.11"
+dependencies = [
+    "telethon (>=1.44.0,<2.0.0)",
+    "aiohttp (>=3.14.1,<4.0.0)",
+    "python-socks (>=2.8.2,<3.0.0)",
+    "python-dotenv (>=1.2.2,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
